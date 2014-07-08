@@ -41,6 +41,13 @@ class VizualizerAdvertise
         return "https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?developerId=".$appId;
     }
 
+    /**
+     * プラグインパッケージの配置されているベースパスを取得します。
+     * @return プラグインパッケージのベースパス
+     */
+    final public static function path(){
+        return realpath(dirname(__FILE__)."/../");
+    }
 
     /**
      * プラグインの初期化処理を行うメソッドです。
